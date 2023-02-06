@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class SISWI {
+                constructor(Nama, Kelas, Jurusan, Tahun_lahir){
+                    this.Nama = Nama;
+                    this.Kelas = Kelas;
+                    this.Jurusan = Jurusan;
+                    this.Tahun_lahir = Tahun_lahir;
+                    this.Tahun_sekarang = 2023;
+                }
+                umur (){
+                    return (this.Tahun_sekarang - this.Tahun_lahir)
+                }
+
+            }
+
+            var Siswi1 = new SISWI("Syifa sekarang :", 10, "PPLG", 2007);
+            var Siswi2 = new SISWI("Sri sekarang :", 11, "TKR", 2000);
+            var Siswi3 = new SISWI("Rahayu sekarang:", 10, "TBSM", 2022);
+
+
+            document.write("Umur " + Siswi1.Nama + Siswi1.umur()+ " tahun" +"<br>");
+            document.write("Umur " + Siswi2.Nama +Siswi2.umur()+ " tahun" +"<br>");
+            document.write("Umur " + Siswi3.Nama +Siswi3.umur()+ " tahun" +"<br>");
+    </script>
+</body>
+</html>
